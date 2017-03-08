@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto+Slab|Slabo+27px|Bungee+Shade|Raleway");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/*
+Image sources:
+
+hopeless - http://www.roylichtenstein.com/images/paintings/hopeless.jpg
+whaam - http://www.tate.org.uk/art/images/work/T/T00/T00897_10.jpg
+blam - https://upload.wikimedia.org/wikipedia/en/c/c3/Blam.jpg
+eye - https://10963-presscdn-0-74-pagely.netdna-ssl.com/wp-content/uploads/2014/03/pop-art-roy-lichtenstein-rug-art-47406-detail.jpg.optimal.jpg
+liberty - https://gabrielaconte.files.wordpress.com/2013/09/flickr-3289563079-original.jpg
+cross - https://gabrielaconte.files.wordpress.com/2013/09/8838201582_f97d64fce6_o.jpg
+sun - https://gabrielaconte.files.wordpress.com/2013/09/9281918809_7352dfd1ab_o.jpg
+twitter - https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg
+facebook - https://upload.wikimedia.org/wikipedia/commons/7/7c/Facebook_New_Logo_%282015%29.svg
+mail - http://simpleicon.com/wp-content/uploads/mail-6.svg
+*/
+.ph-600 {
+  /*2400 x 1800*/
+  width: 800px;
+  height: 600px;
+  background-size: cover;
+  background: url("../images/InContextEagleFace.jpg")}
+
+.ph-300 {
+  width: 300px;
+  height: 300px;
+  background: url("../images/ryochocolatebar.png"); }
+
+.landing {
+  display: none;
+  width: 100vw;
+  background-size: cover; }
+  @media (max-width: 1025px) {
+    .landing {
+      padding-top: 10vh; } }
+  .landing .inside {
+    background: #FF3366;
+    padding: 5vh 10vw calc(10vh) 10vw;
+    width: 80vw;
+    min-height: 65vh;
+    text-align: justify; }
+    .landing .inside .title h1 {
+      font-family: "Bungee Shade", cursive;
+      color: #EEE8D6; }
+    .landing .inside .description {
+      font-family: "Raleway", sans-serif;
+      color: #EEE8D6; }
+  .landing .ph-600 {
+    margin-right: 40px; }
+    @media (max-width: 1195px) {
+      .landing .ph-600 {
+        margin-bottom: 20px; } }
+
+.splash {
+  display: none;
+  background: #FF3366;
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh; }
+  .splash svg {
+    width: 100vw;
+    height: 100vh; }
+
+.intro {
+  display: none;
+  background: url("../images/Asset 2.svg");
+  background-size: cover;
+  color: #EEE8D6; }
+  .intro header {
+    background-color: #FF3366; }
+  .intro .mdl-layout__header a {
+    color: #022933; }
+  .intro .mdl-layout-title {
+    color: #022933; }
+  .intro .mdl-layout__drawer .mdl-layout-title {
+    color: #022933; }
+  .intro .mdl-layout__drawer-button {
+    color: #022933; }
+
+.bio {
+  background: url("../images/DramaticPicture.jpg"), linear-gradient(to right, #626262, #626262, #7f7f7f, rgba(255, 255, 255, 0));
+  background-position: 0 30px, 0 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 100vh, 100%;
+  color: #EEE8D6; }
+  @media (min-width: 1026px) {
+    .bio {
+      background-size: auto 100vh, 100%; } }
+  .bio header {
+    background-color: #FF3366; }
+  footer{
+    background-color: #BD1E1E !important;
+    }
+  .bio footer {
+    width: 100vw;
+    bottom: 0; }
+  .bio .mdl-layout-title {
+    color: white; }
+  .bio .mdl-layout__drawer .mdl-layout-title {
+    color: #022933; }
+  .bio .content {
+    color: black;
+    margin-left: 32vw;
+    margin-right: 10vw;
+    text-align: justify; }
+    .bio .content h1, .bio .content h2 {
+      font-family: "Bungee Shade", cursive; }
+    .bio .content h3, .bio .content h4, .bio .content h5, .bio .content h6 {
+      font-family: "Raleway", sans-serif; }
+    .bio .content div {
+      margin-bottom: 10vh; }
+    .bio .content hr {
+      margin: 20vh 0 20vh 0;
+      color: black;
+      background-color: black;
+      border-width: 3px;
+      border-color: black; }
+
+.portfolio {
+  background: #C96480; }
+  .portfolio header {
+    background-color: #FF3366; }
+  .portfolio .mdl-layout-title {
+    color: #EEE8D6; }
+  .portfolio .mdl-layout__drawer .mdl-layout-title {
+    color: #022933; }
+  .portfolio .mdl-card {
+    margin: 10px; }
+  .portfolio div.whaam {
+    width: 450px;
+    height: 450.5px;
+    background: url("../images/ryochocolatebar.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .portfolio dialog.whaam {
+    width: 50vw;
+    background-color: #022933; }
+    .portfolio dialog.whaam .mdl-dialog__title {
+      color: #548C27;
+      font-family: "Bungee Shade", cursive; }
+    .portfolio dialog.whaam .mdl-dialog__content {
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      text-align: justify; }
+    .portfolio dialog.whaam .mdl-dialog__actions .mdl-button {
+      color: #fff; }
+    .portfolio dialog {
+    width: 50vw;
+    background-color: #022933; }
+    .portfolio dialog .mdl-dialog__title {
+      color: #548C27;
+      font-family: "Bungee Shade", cursive; }
+    .portfolio dialog .mdl-dialog__content {
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      text-align: justify; }
+    .portfolio dialog .mdl-dialog__actions .mdl-button {
+      color: #fff; }
+  .portfolio div.blam {
+    width: 172px;
+    height: 258px;
+    background: url("../images/card1.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .portfolio div.hopeless {
+    background: url("../images/card2.png");
+    width: 350px;
+    height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .portfolio div.sun {
+    background: url("../images/InContextEagleFace.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 341.66667px; }
+  .portfolio div.liberty {
+    background: url("../images/liberty.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 650px;
+    height: 527px; }
+  .portfolio div.cross {
+    background: url("../images/cross.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1409.66667px;
+    height: 697.33333px; }
+  .portfolio div.eye {
+    background: url("../images/asset.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 333px; }
+  .portfolio .mdl-card__actions {
+    font-size: 48px;
+    font-family: "Bungee Shade", cursive;
+    color: #548C27;
+    background: rgba(2, 41, 51, 0.8); }
+  .portfolio .content {
+    color: black;
+    margin-left: 30vw;
+    margin-right: 10vw;
+    text-align: justify; }
+    .portfolio .content h1, .portfolio .content h2 {
+      font-family: "Bungee Shade", cursive; }
+    .portfolio .content h3, .portfolio .content h4, .portfolio .content h5, .portfolio .content h6 {
+      font-family: "Raleway", sans-serif; }
+    .portfolio .content div {
+      margin-bottom: 10vh; }
+    .portfolio .content hr {
+      margin: 20vh 0 20vh 0;
+      color: black;
+      background-color: black;
+      border-width: 3px;
+      border-color: black; }
+
+.contact {
+  background: #C96480; }
+  .contact header {
+    background-color: #FF3366; }
+  .contact .mdl-layout-title {
+    color: #EEE8D6; }
+  .contact .mdl-layout__drawer .mdl-layout-title {
+    color: #022933; }
+  .contact .twitter {
+    position: absolute;
+    right: 15vw;
+    background: url("../images/twitter_logo.svg");
+    box-shadow: none;
+    border: none;
+    width: 30vw;
+    height: 30vw;
+    background-size: 30vw 30vw;
+    background-repeat: no-repeat; }
+  .contact .fb {
+    position: absolute;
+    left: 15vw;
+    background: url("../images/facebook_logo.svg");
+    box-shadow: none;
+    border: none;
+    width: 30vw;
+    height: 30vw;
+    background-size: 30vw 30vw;
+    background-repeat: no-repeat; }
+  .contact .mail {
+    position: absolute;
+    left: 40vw;
+    bottom: 5vh;
+    background: url("../images/mail.svg");
+    box-shadow: none;
+    border: none;
+    width: 20vw;
+    height: 20vw;
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat; }
+
+/*# sourceMappingURL=style.css.map */
