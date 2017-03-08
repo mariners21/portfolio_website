@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/material.min.js"></script>
+
+</head>
+<body>
+<div class="contact mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Contact</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+            </nav>
+        </div>
+
+    </header>
+    <h1 style="text-align: center"> Contact Me Here </h1>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Contact</span>
+        <nav class="mdl-navigation">
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+
+            
+            <a href="#" class="mail" id="contact"></a>
+
+        <dialog class="mdl-dialog">
+            <h4 class="mdl-dialog__title">Send An Email</h4>
+            <div class="mdl-dialog__content">
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" id="name">
+                        <label class="mdl-textfield__label" for="name">Name</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="email" id="email">
+                        <label class="mdl-textfield__label" for="email">Email</label>
+                    </div>
+                </form>
+            </div>
+            <div class="mdl-dialog__actions">
+                <button type="button" class="mdl-button close2">Send</button>
+                <button type="button" class="mdl-button close">Exit</button>
+            </div>
+        </dialog>
+    </main>
+    <footer></footer>
+
+</div>
+<script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#contact');
+    showDialogButton.addEventListener('click', function() {
+        dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
+    });
+    dialog.querySelector('.close2').addEventListener('click', function() {
+        dialog.close();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono|Roboto+Slab|Slabo+27px|Bungee+Shade|Raleway');
+//@import url('https://code.getmdl.io/1.3.0/material.indigo-deep_purple.min.css');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/*
+Image sources:
+
+hopeless - http://www.roylichtenstein.com/images/paintings/hopeless.jpg
+whaam - http://www.tate.org.uk/art/images/work/T/T00/T00897_10.jpg
+blam - https://upload.wikimedia.org/wikipedia/en/c/c3/Blam.jpg
+eye - https://10963-presscdn-0-74-pagely.netdna-ssl.com/wp-content/uploads/2014/03/pop-art-roy-lichtenstein-rug-art-47406-detail.jpg.optimal.jpg
+liberty - https://gabrielaconte.files.wordpress.com/2013/09/flickr-3289563079-original.jpg
+cross - https://gabrielaconte.files.wordpress.com/2013/09/8838201582_f97d64fce6_o.jpg
+sun - https://gabrielaconte.files.wordpress.com/2013/09/9281918809_7352dfd1ab_o.jpg
+twitter - https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg
+facebook - https://upload.wikimedia.org/wikipedia/commons/7/7c/Facebook_New_Logo_%282015%29.svg
+mail - http://simpleicon.com/wp-content/uploads/mail-6.svg
+*/
+$helllo: ';lkl;';
+$offwhite: #EEE8D6;
+$darkblue: #022933;
+$yellow: #FFBA00;
+$blue: #0076A3;
+$green: #548C27;
+$orange: #F39856;
+$red: #D14348;
+$purple: #6D73C2;
+$purple: #6D73C2;
+$dgfsdfg: #444444;
+//$color-nav: $purple;
+$color-text-main: $offwhite;
+$color-main: $purple;
+$color-highlight: $offwhite;
+$color-nav: $darkblue;
+$color-drawer-title: $darkblue;
+$railway: 'Raleway', sans-serif;
+$bungee: 'Bungee Shade', cursive;
+$slabo: 'Slabo 27px', serif;
+$overpass: 'Overpass Mono', monospace;
+$roboto: 'Roboto Slab', serif;
+
+$font-body: $railway;
+$font-title: $bungee;
+
+.ph-600 {
+    width: 600px;
+    height: 300px;
+    background: url("http://placehold.it/600x300");
+}
+
+.ph-300 {
+    width: 300px;
+    height: 300px;
+    background: url("http://placehold.it/300x300");
+}
+
+.landing {
+    display: none;
+
+    width: 100vw;
+    @media (max-width: 1025px) {
+        padding-top: 10vh;
+    }
+
+    //background: url("../images/Asset 2.svg");
+    background-size: cover;
+    .inside {
+        background: #C96480;
+        padding: 5vh 10vw calc(10vh) 10vw;
+        width: 80vw;
+        min-height: 65vh;
+        text-align: justify;
+
+        .title {
+            h1 {
+                font-family: $font-title;
+                color: $offwhite;
+            }
+
+        }
+        .description {
+            font-family: $font-body;
+            color: $offwhite;
+
+        }
+    }
+    .ph-600 {
+        margin-right: 40px;
+        @media (max-width: 1195px) {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.splash {
+    display: none;
+    background: $purple;
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    svg {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.intro {
+
+    display: none;
+    background: url("../images/Asset 2.svg");
+    background-size: cover;
+    color: $color-text-main;
+
+    header {
+        background-color: $color-nav;
+    }
+    .mdl-layout__header {
+        a {
+            color: $darkblue;
+        }
+    }
+    .mdl-layout-title {
+        color: $darkblue;
+    }
+    .mdl-layout__drawer {
+        .mdl-layout-title {
+            color: $color-drawer-title;
+        }
+    }
+    .mdl-layout__drawer-button {
+        color: $darkblue;
+    }
+}
+
+.bio {
+    background: url("../images/Background-bw-v2.png"),
+    linear-gradient(to right, rgba(98, 98, 98, 1), rgba(98, 98, 98, 1), rgba(127, 127, 127, 1), rgba(255, 255, 255, 0));
+
+    background-position: 0 64px, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 100vh, 100%;
+    @media (min-width: 1026px) {
+        background-size: auto 175vh, 100%;
+    }
+
+    color: $color-text-main;
+
+    header {
+        background-color: $color-nav;
+    }
+
+    footer {
+        width: 100vw;
+        bottom: 0;
+    }
+    .mdl-layout-title {
+        color: white;
+        //color: $color-text-main;
+    }
+    .mdl-layout__drawer {
+
+        .mdl-layout-title {
+            color: $color-drawer-title;
+        }
+
+    }
+
+    .content {
+        color: black;
+        margin-left: 32vw;
+        margin-right: 10vw;
+        text-align: justify;
+        h1, h2 {
+            font-family: $font-title;
+        }
+        h3, h4, h5, h6 {
+            font-family: $font-body;
+        }
+        div {
+            margin-bottom: 10vh;
+        }
+        hr {
+            margin: 20vh 0 20vh 0;
+            color: black;
+            background-color: black;
+            border-width: 3px;
+            border-color: black;
+        }
+    }
+}
+
+.portfolio {
+    background: $purple;
+    header {
+        background-color: $color-nav;
+    }
+    .mdl-layout-title {
+        color: $color-text-main;
+    }
+    .mdl-layout__drawer {
+
+        .mdl-layout-title {
+            color: $color-drawer-title;
+        }
+
+    }
+
+    .mdl-card {
+        margin: 10px;
+
+    }
+
+    div.whaam {
+        width: (1536px/2);
+        height: (661px/2);
+        background: url("../images/whaam.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    dialog.whaam {
+        width: 50vw;
+        background-color: $darkblue;
+        .mdl-dialog__title {
+            color: $green;
+            font-family: $font-title;
+        }
+        .mdl-dialog__content {
+            color: #fff;
+            font-family: $font-body;
+            text-align: justify;
+        }
+        .mdl-dialog__actions .mdl-button {
+            color: #fff;
+        }
+    }
+    div.blam {
+        width: 300px;
+        height: 258px;
+        background: url("../images/Blam.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    div.hopeless {
+        background: url("../images/hopeless.jpg");
+        width: 350px;
+        height: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    div.sun {
+        background: url("../images/sun.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: (1890px/3);
+        height: (1025px/3);
+    }
+    div.liberty {
+        background: url("../images/liberty.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: (3064px/4);
+        height: (2108px/4);
+    }
+    div.cross {
+        background: url("../images/cross.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: (4229px/3);
+        height: (2092px/3);
+    }
+    div.eye {
+        background: url("../images/eye.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: (1300px/3);
+        height: (999px/3);
+    }
+
+    .mdl-card__actions {
+        font-size: 48px;
+        font-family: $font-title;
+        color: $green;
+        background: rgba(2, 41, 51, .8);
+    }
+
+    .content {
+        color: black;
+        margin-left: 30vw;
+        margin-right: 10vw;
+        text-align: justify;
+        h1, h2 {
+            font-family: $font-title;
+        }
+        h3, h4, h5, h6 {
+            font-family: $font-body;
+        }
+        div {
+            margin-bottom: 10vh;
+        }
+        hr {
+            margin: 20vh 0 20vh 0;
+            color: black;
+            background-color: black;
+            border-width: 3px;
+            border-color: black;
+        }
+    }
+
+}
+
+.contact {
+    background: $purple;
+    header {
+        background-color: $color-nav;
+    }
+    .mdl-layout-title {
+        color: $color-text-main;
+    }
+    .mdl-layout__drawer {
+
+        .mdl-layout-title {
+            color: $color-drawer-title;
+        }
+
+    }
+    .twitter {
+        position: absolute;
+        right: 15vw;
+        background: url("../images/twitter_logo.svg");
+        box-shadow: none;
+        border: none;
+        width: 30vw;
+        height: 30vw;
+        background-size: 30vw 30vw;
+        background-repeat: no-repeat;
+    }
+    .fb {
+        position: absolute;
+        left: 15vw;
+        background: url("../images/facebook_logo.svg");
+        box-shadow: none;
+        border: none;
+        width: 30vw;
+        height: 30vw;
+        background-size: 30vw 30vw;
+        background-repeat: no-repeat;
+    }
+    .mail {
+        position: absolute;
+        left: 40vw;
+        bottom: 5vh;
+        background: url("../images/mail.svg");
+        box-shadow: none;
+        border: none;
+        width: 20vw;
+        height: 20vw;
+        background-size: 20vw 20vw;
+        background-repeat: no-repeat;
+    }
+}

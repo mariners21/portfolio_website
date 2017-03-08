@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/material.min.js"></script>
+
+</head>
+<body>
+<div class="portfolio mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Portfolio</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+            </nav>
+        </div>
+
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Portfolio</span>
+        <nav class="mdl-navigation">
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="mdl-grid">
+            <div class="whaam mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand"></div>
+                <div class="mdl-card__actions">
+                    <span class="demo-card-image__filename">Chocolate Bar</span>
+                </div>
+            </div>
+
+            <!--only added one dialogue for proof of concept-->
+            <dialog class="mdl-dialog whaam">
+                <h4 class="mdl-dialog__title">Chocolate Bar</h4>
+                <div class="mdl-dialog__content">
+                    <p>
+                        I was assigned a project of making a chocolate bar wrapper for a company called Transformation. The flavor was to be Almonds and Sea Salt and the bar was 70% dark chocolate. </p>
+                </div>
+                <div class="mdl-dialog__actions">
+
+                    <button type="button" class="mdl-button close">Close</button>
+                </div>
+            </dialog>
+
+            <div class="blam mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand"></div>
+                <div class="mdl-card__actions">
+                    <span class="demo-card-image__filename">Card</span>
+                </div>
+            </div>
+             <dialog class="mdl-dialog blam">
+                <h4 class="mdl-dialog__title">Suicide Prevention Card Front</h4>
+                <div class="mdl-dialog__content">
+                    <p>
+                        I was tasked with coming up with a wallet card for a Suicide prevention campaign. The card was to include a predetermined “catchphrase” and was not to include any yellows, oranges, or sunsets/sunrises. The card had to explain the acronym LEARN and provide information on the campaign.</p>
+                </div>
+                <div class="mdl-dialog__actions">
+
+                    <button type="button" class="mdl-button close">Close</button>
+                </div>
+            </dialog>
+            <div class="hopeless mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand"></div>
+                <div class="mdl-card__actions">
+                    <span class="demo-card-image__filename">Prevent</span>
+                </div>
+            </div>
+             <dialog class="mdl-dialog hopeless">
+                <h4 class="mdl-dialog__title">Suicide Prevention Card Back</h4>
+                <div class="mdl-dialog__content">
+                    <p>
+                        I was tasked with coming up with a wallet card for a Suicide prevention campaign. The card was to include a predetermined “catchphrase” and was not to include any yellows, oranges, or sunsets/sunrises. The card had to explain the acronym LEARN and provide information on the campaign.</p>
+                </div>
+                <div class="mdl-dialog__actions">
+
+                    <button type="button" class="mdl-button close">Close</button>
+                </div>
+            </dialog>
+            <div class="sun mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand"></div>
+                <div class="mdl-card__actions">
+                    <span class="demo-card-image__filename">T-Shirt</span>
+                </div>
+            </div>
+            <dialog class="mdl-dialog sun">
+                <h4 class="mdl-dialog__title">T-Shirt</h4>
+                <div class="mdl-dialog__content">
+                    <p>
+                        For this project, I was commissioned to create a shirt design for East Side Preparatory School. The shirt was to be cheap, and something that could be sold for a low price or given away at events. It was intended for mostly athletic events, so looking good in a crowd was important.</p>
+                </div>
+                <div class="mdl-dialog__actions">
+
+                    <button type="button" class="mdl-button close">Close</button>
+                </div>
+            </dialog>
+            <div class="eye mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand"></div>
+                <div class="mdl-card__actions">
+                    <span class="demo-card-image__filename">Asset</span>
+                </div>
+            </div>
+            <dialog class="mdl-dialog eye">
+                <h4 class="mdl-dialog__title">Phone Design</h4>
+                <div class="mdl-dialog__content">
+                    <p>
+                        This was just a design I did for myself to have a bit of fun. I wanted to make a simplistic and geometric smartphone design with lots of colors. This is one of my favorite projects because I am incredibly happy with the result of it.</p>
+                </div>
+                <div class="mdl-dialog__actions">
+
+                    <button type="button" class="mdl-button close">Close</button>
+                </div>
+            </dialog>
+            
+            
+
+        </div>
+        <footer></footer>
+
+    </main>
+
+
+    <script>
+    function register(aClass){
+        let button = document.querySelector('div.' + aClass);
+        let dialog = document.querySelector('dialog.' + aClass);
+        button.addEventListener('click', function () {
+            dialog.showModal();
+            /* Or dialog.show(); to show the dialog without a backdrop. */
+        });
+        dialog.querySelector('.close').addEventListener('click', function () {
+            dialog.close();
+        });
+    }
+    register('whaam');
+    register('blam');
+    register('hopeless');
+    register('sun');
+    register('eye');
+    </script>
+</div>
+
+</body>
+</html>
